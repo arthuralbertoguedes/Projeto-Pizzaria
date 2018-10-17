@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Arthur Alberto Guedes">
+    <meta name="description" content="Galeria online para criação de álbuns personalizados">
+    <title>Projeto Galeria</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+</head>
+<body onresize="getSize()">
+        <header>
+            <nav class="navbar navbar-expand-sm bg-success navbar-light p-3 shadow">
+                <a href="" class="navbar-brand mb-3"><i class="fas fa-camera-retro fa-lg"> Galeria de fotos</i></a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-target">
+                        <ul class="navbar-nav ml-auto mr-5">
+                            <li class="navbar-item mx-2  pr-3">
+                                <a href="" class="navbar-link  text-dark font-weight-bold  "> Home </a>
+                                <hr class="mt-1 w-100">
+                            </li>
+                            <li class="navbar-item mx-2 ">
+                                <a href="" class="navbar-link  text-dark font-weight-bold  pr-3"> Galeria </a>
+                                <hr class="mt-1">
+                            </li>
+                            <li class="navbar-item  mx-2">
+                                <a href="" class="navbar-link  text-dark font-weight-bold"> Sobre</a>
+                                <hr class="mt-1">
+                            </li>
+                        </ul>
+                </div>
+                
+            </nav>
+        </header>
+        <section>
+            <img src="images/camera.jpg" alt="Câmera fotográfica" class="cameraFundo">
+            <img src="images/quadro.jpg" alt="Quadro com fotografia" class="cameraFundo2">
+            <h1 class="text-success display-3 text-center mt-5">Monte seu álbum!</h1>
+            <h3 class="text-dark text-center mt-1">Adicione fotos de maneira segura e prática.</h3>
+            <div class="d-flex justify-content-center mt-4">
+                <button class="btn btn btn-outline-success mr-2 text-dark"><strong> <a>Entrar</a> </strong></button>
+                <button class="btn btn-outline-success text-dark"><strong>Não sou cadastrado</strong></button>
+            </div>
+        </section>
+        
+        <section>
+            <div class="bordaDiv container-fluid ">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-3 img-thumbnail ">
+                        <img src="images/img01.jpg" alt="Paisagem natural" class="img-fluid mx-auto d-block ">
+                        <p class="p-2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <button class="btn btn-outline-success">Ver</button>
+                        <button class="btn btn-outline-success">Editar</button>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 img-thumbnail ">
+                        <img src="images/img02.jpg" alt="Paisagem natural" class="img-fluid mx-auto d-block ">
+                        <p class="p-2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <button class="btn btn-outline-success">Ver</button>
+                        <button class="btn btn-outline-success">Editar</button>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 img-thumbnail">
+                         <img src="images/img03.jpg" alt="Paisagem natural" class="img-fluid mx-auto d-block ">
+                        <p class="p-2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <button class="btn btn-outline-success">Ver</button>
+                        <button class="btn btn-outline-success">Editar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bordaDiv container-fluid mt-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-3 img-thumbnail">
+                        <img src="images/img04.jpg" alt="Paisagem natural" class="img-fluid mx-auto d-block ">
+                        <p class="p-2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <button class="btn btn-outline-success">Ver</button>
+                        <button class="btn btn-outline-success">Editar</button>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 img-thumbnail ">
+                        <img src="images/img05.jpg" alt="Paisagem natural" class="img-fluid mx-auto d-block ">
+                        <p class="p-2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <button class="btn btn-outline-success">Ver</button>
+                        <button class="btn btn-outline-success">Editar</button>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 img-thumbnail">
+                        <img src="images/img06.jpg" alt="Paisagem natural" class="img-fluid mx-auto d-block ">
+                        <p class="p-2">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <button class="btn btn-outline-success">Ver</button>
+                        <button class="btn btn-outline-success">Editar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-success text-dark text-center p-2 text-font-bold mt-5 pt-3">
+            <p class="mb-0">Criado por Arthur Alberto ©</p>
+            <p class="mt-0">2018</p>
+        </footer>
+
+    <script src="bootstrap/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/animations.js"></script>
+    <script>
+        $(document).ready(initialize)
+    </script>
+</body>
+</html>
