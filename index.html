@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Arthur Alberto Guedes">
+	<meta name="description" content="Pizzaria delivery com os melhores sabores da região.">
+    <title>Projeto Pizzaria</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> 
+    <link rel="stylesheet" href="../bootstrap//dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body onresize="bgControl()">
+    
+    <header class="headerHome">
+        <div class="navbar navbar-light  navbar-expand-sm p-3">
+            <a href="#" class="navbar-brand">
+                <span class="">Logo Pizzaria</span>
+            </a>
+            <button class="navbar-toggler" data-target="#menuSite" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-auto" id="menuSite">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-2">
+                        <a href="#" class="nav-link itemMenu p-2">Home</a>
+                    </li>
+                    <li class="nav-item dropdown mr-2">
+                        <a href="#" class="nav-link dropdown-toggle itemMenu p-2" id="linkDropDown" data-toggle="dropdown">Pedidos</a>
+                        <div class="dropdown-menu roundedDiv" aria-labelledby="linkDropDown">
+                            <a href="#" class="dropdown-item dropItemMenu p-2">Faça seu pedido</a>
+                            <a href="#" class="dropdown-item dropItemMenu p-2">Acompanhar pedido</a>
+                            <a href="#" class="dropdown-item dropItemMenu p-2">Alterar pedido</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-2">
+                            <a href="#" class="nav-link itemMenu p-2">Lojas</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                            <a href="#" class="nav-link itemMenu p-2">Fale conosco</a>
+                    </li>
+                </ul>
+            </div>    
+        </div>
+        <div class="row mt-3">
+            <div class="col-10 col-sm-6 col-md-5 mb-5 ">
+                <div class="divMenu p-3 ml-5">
+                    <h1>Faça já seu pedido</h1>
+                    <p class="mb-0"><span><i class="fas fa-phone "></i></span> 011 9989-8989</p>
+                    <p><span><i class="fas fa-phone "></i></span> 062 9983-8989</p>
+                    
+                </div>
+             </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="secaoEspecialidades">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-10 my-3 mb-5">
+                        <h1 class="text-center tituloVariedades my-3">Especialidades</h1>
+                    </div>    
+                    <div class="col-10 col-sm-3 divPizza">
+                        <div class="divEspecialidades text-center">
+                            <h2 class="mb-2">Calabresa</h2>
+                            <p>Muzzarela, Calabresa, Orégano e Azeitonas pretas</p>
+                            <p>$25,90</p>
+                            <img class="" src="../images/pizza-calabresa.jpg" alt="Pizza calabresa">
+                            <p class="small-font">*Entrega Grátis para toda cidade</p>
+                        </div>
+                    </div>
+                    <div class="col-10 col-sm-3 divPizza">
+                            <div class="divEspecialidades text-center ">
+                            <h2  class="mb-2">Marguerita</h2>
+                            <p>Muzzarela, Tomate, Orégano e Manjericão</p>
+                            <p>$25,90</p>
+                            <img class="" src="../images/pizza-marguerita.jpg" alt="Pizza Marguerita">
+                            <p class="small-font">*Entrega Grátis para toda cidade</p>
+                            </div>
+                    </div>       
+                    <div class="col-10 col-sm-3 divPizza">
+                        <div class="divEspecialidades text-center ">
+                            <h2 class="mb-2">Lombinho</h2>
+                            <p>Muzzarela, Lombinho, Orégano e Azeitonas Pretas</p>
+                            <p>$29,90</p>
+                            <img class="" src="../images//pizza-lombinho.jpg" alt="Pizza lombinho">
+                            <p class="small-font">*Entrega Grátis para toda cidade</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secaoLocalizacao mt-5">
+            <div class="container-fluid">
+                <div class="row mt-5 mb-3 ">
+                    <div class="col-12 col-lg-7 ml-2 mt-4">
+                        <h2 class="tituloSecaoLocalizacao">Encontre a unidade mais perto de você:</h2>
+                        <iframe id="localizacao" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1606.6735306612136!2d-49.27522206865488!3d-16.710119179285556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spizzaria!5e0!3m2!1spt-BR!2sbr!4v1535749820573"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-12 col-lg-4 mt-4">
+                        
+                        <h2 class="tituloSecaoLocalizacao">Faça já sua reserva</h2>
+                        <form action="" class="formulario">
+                            <div class="my-3">
+                                <label for="">Nome:</label>
+                                <input type="text" >
+                            </div>
+                            <div class="my-3">
+                                <label for="">Telefone:</label>
+                                <input type="text" >
+                            </div>
+                            <div class="my-3">
+                                <label for="">Quantidade de pessoas:</label>
+                                <select name="quantidade" id="" class="d-block">
+                                    <option value="">1 </option>
+                                    <option value="">2 </option>
+                                    <option value="">3 </option>
+                                    <option value="">4 </option>
+                                    <option value="">5 </option>
+                                    <option value="">6 </option>
+                                    <option value="">7 </option>
+                                    <option value="">8 </option>
+                                    <option value="">9 </option>
+                                    <option value="">10 </option>
+                                    <option value="">11 </option>
+                                    <option value="">12+ </option>
+                                </select>
+                            </div>
+                            <button class="my-3 mt-4 btn-dark rounded p-2 d-block mx-auto pointer"><a class="text-light" href="#">Agendar Data/hora</a></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center rodape">
+        <div class="row d-flex">
+            <div class="col col-md-6 align-self-center">
+                <p>Criado por Arthur Alberto Guedes</p>
+                <p>2018</p>
+            </div>
+            <div class="col col-md-6">
+                <h4>Contato</h4>
+                <p class="mb-0"><span><i class="fas fa-phone "></i></span> 011 9989-8989</p>
+                <p><span><i class="fas fa-phone "></i></span> 062 9983-8989</p>
+                <p>Rua JH38, Jardim Alamameda, SP</p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="../bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>
