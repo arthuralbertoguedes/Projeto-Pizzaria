@@ -1,0 +1,151 @@
+/*===RESET===*/
+*{ margin:0; padding: 0; box-sizing: border-box; }
+body,html{height: 100%; overflow-x: hidden; background-color: white; }    
+img{max-width: 100%;}
+h2{font-family: 'Baloo Tammudu', cursive;}
+footer{background-color: #fff !important; }
+p{font-family: 'Baloo Tammudu', cursive; font-weight: 500;}
+/*CABEÇALHO*/
+
+/*Menu*/
+.navbar{
+    transition: 1.5s;
+}
+.headerHome{
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Pacifico', cursive;
+    height: 100%;
+    background: url(../images/bg-pizza-smalldevices.png) center center no-repeat;
+    background-size: cover;
+}
+
+.itemMenu{
+    color: black !important;
+    font-weight: 200;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    opacity: 0.9;
+}
+.itemMenu:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.dropItemMenu:hover{
+    background: linear-gradient(to right,orange,white);
+}
+.roundedDiv{
+    border-radius: 15px;
+}
+
+/*div Menu*/
+.divMenu{
+    opacity: 0.9;
+    border-radius: 15px;
+    background-color: white;
+}
+/*Secao Especialidades*/
+.secaoEspecialidades{
+    margin: 50px 0 70px 0;
+    padding-bottom: 50px;
+    background: url(../images/bg-madeira.jpg) top left no-repeat;
+    background-size: cover;
+    box-shadow: 1px 5px 13px black;
+}
+
+/*div Pizza*/
+.tituloVariedades{
+    font-size: 200%;
+    font-family: 'Pacifico', cursive;
+}
+.divPizza{
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding: 25px;
+    padding-top:0;
+    margin-right: 15px;
+    border-radius: 20px;  
+    font-family: 'Baloo Tammudu', cursive;
+    box-shadow: 1px 5px 13px black;
+    background-color: white;
+}
+.divPizza h2{
+    font-family: 'Baloo Tammudu', cursive;
+}
+.divPizza img{
+    border-radius: 100%;
+}
+.small-font{
+    margin-top: 15px;
+    font-size: 10px;
+}
+
+/*Seçao localizaçao*/
+#localizacao{
+    width: 100%;
+    height: 350px;
+    box-shadow: 1px 5px 13px black;
+    margin-top: 15px;
+}
+.secaoLocalizacao{
+    padding: 0 0 20px 0;
+    background: url(../images/bg-madeira.jpg) top left no-repeat;
+    background-size: cover;
+    box-shadow: 1px 5px 13px black;
+}
+.tituloSecaoLocalizacao{
+    color: black;
+    font-size: 130%;
+    font-family: 'Pacifico', cursive;
+}
+.formulario{
+    padding: 10%;
+    box-shadow: 1px 5px 13px black;
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    
+    opacity: 0.9;
+    height: 350px;
+    margin-top: 20px;
+}
+.formulario input{
+    border-radius: 5px;
+    width: 100%;
+}
+
+/*RODAPE*/
+.rodape{
+    font-weight: 500;
+    background-color: white;
+    color: black;
+    padding: 1%;
+    box-shadow: 1px 5px 13px black;
+}
+.rodape p:last-child{
+    margin-top: -15px;
+}
+
+@media (min-width: 968px){
+    /*Carregando fundo de alta resolução*/
+    .headerHome{
+    background: url(../images/bg-pizza-lg.jpg) top left no-repeat;
+    background-size: 100%;
+    
+    }   
+}
+
+@media (min-width: 1600px){
+    /*Ajuste fontes para Super resoluções*/
+    *{
+        font-size: 105%;
+    }
+}
+@media (min-width: 2000px){
+    /*Ajuste fontes para Super resoluções*/
+    *{
+        font-size: 110%;
+    }
+}
+
